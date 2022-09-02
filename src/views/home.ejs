@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Storystrap Template</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+    <style>
+      body {
+        background: url('/images/book1.jpg');
+        width: 100vh;
+        background-size: cover;
+      }
+      .navbar{
+        background-color: transparent;
+      }
+    </style>
+	</head>
+	<body >
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+ 
+</header>
+<div class="desc"style="position: relative;width: 500px;top:115px;left: 1100px;">
+	<h1 style="color: white;">welcome to the book of records</h1>
+	<h4>upload your content !! share your ideas to the world</h4>
+	<h4>inspire  the nextGen</h4>
+	<!-- <button type="button" class="btn btn-primary">Register</button> -->
+	</div>
+<form action="/user/loginUser" method="post">
+	<div class="mb-3" style="position: relative;width: 500px;top:140px;left: 1100px;" >
+	  <label for="exampleInputEmail1" class="form-label" style="color: white">Email address</label>
+	  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+	  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+	</div>
+	<div class="mb-3" style="position: relative;width: 500px;top:160px;left: 1100px;">
+	  <label for="exampleInputPassword1" class="form-label"  style="color: white">Password</label>
+	  <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+	</div>
+	<div class="mb-3 form-check" style="position: relative;width: 500px;top:160px;left: 1100px;">
+	  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	  <label class="form-check-label" for="exampleCheck1"  style="color: white">Check me out</label>
+	</div>
+<!-- <button type="submit" class="btn btn-primary" style="position: relative;/* left: 916px; */float: right;left: 400px;top: 180px;" href="/user/loginUser">Submit</button> -->
+<button  type="submit" class="btn btn-primary" style="position: relative;/* left: 916px; */float: right;left: 400px;top: 180px;">Submit</button>
+
+  </form>
+  <div class="newuser" style="position: relative;display: flex;width: 500px;top:160px;left: 1460px; color: white;">
+  <span class="newUSerSpan"style="margin-right: 10px"><p>New User ..?  </p></span><a href="/user/RegisterForm" class="link-primary " style="color:white;"> Sign Up</a>
+</div>
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

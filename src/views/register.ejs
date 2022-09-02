@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Book registrtion Form</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/books">Books</a>
+        </li>
+        <li>
+          <a href="books/register-book">Register Book</a>
+        </li>
+        <li>
+          <a href="/authorlist">Author</a>
+        </li>
+        <li>
+          <a href="authorlist/author-register">Register Author</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h3>Book Registration Form
+          <p class="lead"></p>
+        </h3>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+   
+          <form action="/books/addbooks"  method="post" enctype="multipart/form-data"> 
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Fname">Book Name</label>
+                    <input type="text" class="form-control" placeholder="First name" id="Fname" name="bookname">
+                  </div>
+              <div class="form-group col-md-6">
+
+               
+                    <label for="inputCity">Author Name</label>
+                    <input type="text" class="form-control" id="inputCity" name="authorname">
+               
+                
+              </div>
+             
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputAddress ">Book Description</label>
+              <input type="text" class="form-control" id="inputAddress" name="bookdesc">
+            </div>
+            <div class="form-group col-md-6">
+
+                <label >Language</label> <br>
+                <input type="radio" class="form-check-input" id="radio1"  value="English" checked name="language"> English
+                <label class="form-check-label" for="radio1"></label>
+
+                <input type="radio" class="form-check-input" id="radio2"  value="Hindi" name="language"> Hindi
+                <label class="form-check-label" for="radio2"></label>
+
+                <input type="radio" class="form-check-input" id="radio3"  value="Malayalam" name="language"> Malayalam
+                <label class="form-check-label" for="radio3"></label>
+
+                <input type="radio" class="form-check-input" id="radio4"  value="Other" name="language"> Other
+                <label class="form-check-label" for="radio4"></label>
+
+              </div></div>
+
+            <div class="form-row col-md-12">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Country</label>
+                <select id="inputState" class="form-control" name="country">
+                  <option value="india"selected>india</option>
+                  <option value="usa">usa</option>
+                  <option value="uk">uk</option>
+                  <option value="germany">Germany</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Price</label>
+                <input type="text" class="form-control" id="inputZip" name="price">
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+                
+              <!-- <h6 class="mb-0">Upload CV</h6>
+              <input class="form-control form-control-lg" id="formFileLg" type="file" />
+              <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file
+                size 50 MB</div> -->
+                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                <input class="form-control" type="file" id="formFileMultiple" name="image" onchange="imageupload(event)"  multiple>
+            </div>
+            <div class="form-group col-md-6">
+                
+           
+            </div>
+
+            <div class="form-group col-md-12" >
+              <div class="form-check ">
+              
+              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+           
+          </form>
+         
+          <!--/stories-->
+          
+          
+
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
