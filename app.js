@@ -36,7 +36,7 @@ app.use(express.static('./public')) //cs and js loading
 
 app.use(express.urlencoded({extended:true})) // post method middileware
 app.use(express.json()) //
-app.use(cors())
+app.use(cors())//back end front connected
 app.use(session({
     secret:process.env.SESSION_SECRET,
     resave:false,

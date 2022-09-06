@@ -1,7 +1,10 @@
 const mongoOs= require('mongoose')
 //mongoOs.connect('mongodb://localhost:27017/Library') // after27017/'liberary' - ucan add the db name
 const url = process.env.MONGOURL
-mongoOs.connect(url)
+mongoOs.connect(url,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+})
 const registerBook = new mongoOs.Schema({
 
     bookname:String,
