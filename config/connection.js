@@ -1,6 +1,8 @@
+require('dotenv').config()
 const mongoOs= require('mongoose')
 //mongoOs.connect('mongodb://localhost:27017/Library') // after27017/'liberary' - ucan add the db name
 const url = process.env.MONGOURL
+//const url ="mongodb+srv://rijil:Rijil123@hackthon.lrqnzpb.mongodb.net/lib2020?retryWrites=true&w=majority"
 mongoOs.connect(url,{
     useNewUrlParser:true,
     useUnifiedTopology:true

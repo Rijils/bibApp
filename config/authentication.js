@@ -1,7 +1,8 @@
 const session = require('express-session')
 const mongodbSession=require('connect-mongodb-session')(session)
 const store = new mongodbSession({
-    uri:"mongodb://localhost:27017/Library",
+    //uri:"mongodb://localhost:27017/Library",
+    uri:process.env.MONGOURL,
     collection:"mysession"
 })
 const isloggedin=(req,res,next)=>{
